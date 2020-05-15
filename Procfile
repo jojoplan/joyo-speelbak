@@ -1,1 +1,1 @@
-web: gunicorn joyospeelbak.wsgi --log-file -
+web: gunicorn joyo-speelbak.wsgi --log-file -
