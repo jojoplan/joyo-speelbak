@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-13 19:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base_generic.html:24
+msgid "Info"
+msgstr "Info"
+
+#: templates/base_generic.html:25 templates/speels/game_list.html:5
+msgid "Question - Answer"
+msgstr "Vraag - Antwoord"
+
+#: templates/base_generic.html:26
+msgid "Labyrinth"
+msgstr "Labyrint"
+
+#: templates/base_generic.html:27 templates/speels/shape_list.html:5
+msgid "Shapes"
+msgstr "Vormen"
+
+#: templates/speels/game_board.html:17
+msgid "Drag the answers with the mouse."
+msgstr "Sleep de antwoorden met de muis."
+
+#: templates/speels/game_list.html:15
+msgid "No games available."
+msgstr "Dit type spel is niet beschikbaar."
+
+#: templates/speels/index.html:5
+msgid "Content"
+msgstr "Inhoud"
+
+#: templates/speels/index.html:7
+msgid "Games"
+msgstr "Spelletjes"
+
+#: templates/speels/index.html:8
+msgid "Genres"
+msgstr "Genres"
+
+#: templates/speels/index.html:9
+msgid "Sections"
+msgstr "Afdelingen"
+
+#: templates/speels/laby_board.html:17
+msgid "Use arrow buttons."
+msgstr "Gebruik pijltjes toetsen."
+
+#: templates/speels/shape_board.html:12
+msgid "Make this shape"
+msgstr "Maak deze vorm"
+
+#: templates/speels/shape_board.html:16
+msgid "again"
+msgstr "opnieuw"
+
+#: templates/speels/shape_board.html:21
+msgid "next"
+msgstr "volgende"
+
+#: templates/speels/shape_board.html:22
+msgid "previous"
+msgstr "vorige"
+
+#: templates/speels/shape_board.html:31
+msgid "Click the dots."
+msgstr "Klik op de stippen."
+
+#: templates/speels/shape_board.html:31
+msgid "Start with the red dot."
+msgstr "Start met de rode."
+
+#: templates/speels/shape_board.html:35
+msgid "node"
+msgstr "knooppunt"
+
+#: templates/speels/shape_board.html:36
+msgid "bend"
+msgstr "buiging"
+
+#: templates/speels/shape_board.html:37
+msgid "start"
+msgstr "start"
+
+#: templates/speels/shape_list.html:15
+msgid "No shapes available."
+msgstr "Geen vormen beschikbaar."

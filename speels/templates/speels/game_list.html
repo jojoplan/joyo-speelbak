@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block content %}
+  <h2>{% trans "Question - Answer" %}</h2>
+  {% if game_list %}
+  <ul>
+    {% for game in game_list %}
+      <li class="listing">
+        <a href="{{ game.get_absolute_url }}">{{ game.title }}</a> ({{game.display_genre}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>{% trans "No games available." %}</p>
+  {% endif %}       
+{% endblock %}

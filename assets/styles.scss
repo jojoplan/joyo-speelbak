@@ -1,0 +1,177 @@
+$color-text-default: silver;
+$color-link-text:    #DADADA;
+
+$color-bg-default:   #36424C;
+$color-head-foot:    #455C62;
+$color-menu:         #26323C;
+$color-menu-link-bg: #7A8472;
+$color-link:         #5A7752;
+$color-link:         #5A7752;
+$color-link-hover:   #3A5232;
+
+$margin-single:      1em;
+$min-height-body:    800px;
+
+$board-color:        #847544;
+$board-width:        1204px;
+$board-height:       756px;
+
+/* General */
+
+body {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  background: $color-bg-default;
+  color: $color-text-default;
+}
+
+p, ul, ol {
+  margin: 0; padding: 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: $color-link-text;
+}
+
+a:link {
+  background: $color-link;
+}
+
+a:hover {     
+  background: $color-link-hover;
+}
+
+#board-canvas, #board-canvas-2 {
+  width: $board-width;
+  height: $board-height;
+  background: $board-color;
+  margin-left: 2em;
+}
+
+#board-canvas-2 {
+  width: 1190px;
+  height: 700px;
+}
+
+#board-canvas-small {
+  width: 440px;
+  height: 140px;
+  background: $color-bg-default;
+  margin-left: $margin-single;
+  display: inline;
+}
+.hidden {
+  display: none;
+}
+
+/* Vertical flex layout */
+
+.vflex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.vflex-header, .vflex-footer {
+  background-color: $color-head-foot;
+  padding-left:0.3em;
+  padding-top:0.3em;
+  padding-bottom:0.1em;
+}
+
+.vflex-body {
+  flex: 1;
+  min-height: $min-height-body;
+}
+
+/* Horizontal flex layout */
+
+.hflex-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.hflex-body {
+  flex: 1;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+  
+  li.listing {
+    margin-bottom: 1em;
+    a {
+      display: inline-block;
+      padding: 0.2em;
+      min-width: 20em;
+    }
+  }
+}
+
+/* Menu with menu buttons */
+
+.hflex-sidebar {
+  min-height: $min-height-body;
+}
+
+.hflex-menu {
+  width: 240px;
+  background-color: $color-menu;
+
+  li {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: $margin-single; 
+    background: $color-menu-link-bg;
+    display: flex;
+
+    a {
+      margin: 0 5px 0 5px;
+      border: 1px solid $color-menu-link-bg;
+      padding: 0.4em 0 0.4em 0;
+      text-align: center;
+      flex: 1;
+      color: $color-link-text;
+    }
+
+    a.button-enabled {
+      background: $color-link;
+    }
+    
+    a:link {
+      background: $color-link;
+    }
+
+    a:focus {
+      border: 1px solid orange;
+    }
+
+    a:hover {     
+      background: $color-link-hover;
+    }
+
+    a:active {
+      background: #AAC7A2;
+      color: black;
+    }
+    
+    a.button-disabled, a:hover .button-disabled {
+      background: #A0A0A0;
+    }
+  }
+}
+
+
+#board-status {
+  position: relative;
+  padding-left: 700px;
+}

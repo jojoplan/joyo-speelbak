@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block content %}
+   <h3>{% trans "Content" %}:</h3>
+   <ul>
+      <li><strong>{% trans "Games" %}:</strong> {{ num_games }}</li>
+      <li><strong>{% trans "Genres" %}:</strong> {{ num_genres }}</li>
+      <li><strong>{% trans "Sections" %}:</strong> {{ num_sections }}</li>
+   </ul>
+{% endblock %}

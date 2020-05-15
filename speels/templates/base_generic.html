@@ -1,0 +1,47 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Joyo Speelbak</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'common/styles.css' %}">
+  {% block headlinks %}{% endblock %}
+</head>
+<body>
+<!--   {% get_current_language as LANGUAGE_CODE %} -->
+  
+  <div class="vflex-box">
+    <div class="vflex-header">
+      <p>*H*</p>
+    </div>
+    <div class="vflex-body">
+      <div class="hflex-box">
+        <div class="hflex-menu hflex-sidebar">
+        {% block sidebar %}
+          <ul class="sidebar-nav">
+            <li><a href="{% url 'index' %}">{% trans "Info" %}</a></li>
+            <li><a href="{% url 'games' %}">{% trans "Question - Answer" %}</a></li>
+            <li><a href="{% url 'labys' %}">{% trans "Labyrinth" %}</a></li>
+            <li><a href="{% url 'shapes' %}">{% trans "Shapes" %}</a></li>
+          </ul>
+        {% endblock %}
+        </div>
+        <div class="hflex-body">
+          {% block content %}{% endblock %}
+        </div>
+        <div class="hflex-right">
+          <p>*****</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="vflex-footer">
+      <p>*F*</p>
+    </div>
+   
+  </div>
+  
+</body>
+</html>

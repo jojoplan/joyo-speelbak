@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block headlinks %}
+  {% load static %}
+    <script defer src="{% static 'common/jquery.js' %}"></script>
+    <script defer src="{% static 'speels/laby_handle.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+  <h2>{{ game.title }}:</h2>
+  <div>
+    <canvas id="board-canvas">
+    </canvas>
+  </div>
+  <div>
+    <p id="board-status">{% trans "Use arrow buttons." %}</p>
+  </div>
+  <div class="hidden">
+    <p id="laby-walls-horz">{{ game.get_walls_horz }}</p>
+    <p id="laby-walls-vert">{{ game.get_walls_vert }}</p>
+  </div>
+{% endblock %}
+

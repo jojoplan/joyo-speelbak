@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block headlinks %}
+  {% load static %}
+    <script defer src="{% static 'common/jquery.js' %}"></script>
+    <script defer src="{% static 'speels/board_handle.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+  <h2>{{ game.title }}:</h2>
+  <div>
+    <canvas id="board-canvas">
+    </canvas>
+  </div>
+  <div>
+    <p id="board-status">{% trans "Drag the answers with the mouse." %}</p>
+  </div>
+  <div class="hidden">
+    <p id="game-questions">{{ game.get_questions }}</p>
+    <p id="game-answers">{{ game.get_answers }}</p>
+    <p id="game-check">{{ game.id }}/checkresults</p>  </div>
+{% endblock %}

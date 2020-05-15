@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-13 19:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base_generic.html:24
+msgid "Info"
+msgstr "Abriss"
+
+#: templates/base_generic.html:25 templates/speels/game_list.html:5
+msgid "Question - Answer"
+msgstr "Frage - Antwort"
+
+#: templates/base_generic.html:26
+msgid "Labyrinth"
+msgstr "Labyrinth"
+
+#: templates/base_generic.html:27 templates/speels/shape_list.html:5
+msgid "Shapes"
+msgstr "Formen"
+
+#: templates/speels/game_board.html:17
+msgid "Drag the answers with the mouse."
+msgstr ""
+
+#: templates/speels/game_list.html:15
+msgid "No games available."
+msgstr "Deise Art von Spiele ist nie da."
+
+#: templates/speels/index.html:5
+msgid "Content"
+msgstr "Abriss"
+
+#: templates/speels/index.html:7
+msgid "Games"
+msgstr "Spiele"
+
+#: templates/speels/index.html:8
+msgid "Genres"
+msgstr "Genres"
+
+#: templates/speels/index.html:9
+msgid "Sections"
+msgstr "Abteilungen"
+
+#: templates/speels/laby_board.html:17
+msgid "Use arrow buttons."
+msgstr ""
+
+#: templates/speels/shape_board.html:12
+msgid "Make this shape"
+msgstr "Mache diese Form"
+
+#: templates/speels/shape_board.html:16
+msgid "again"
+msgstr "nochmals"
+
+#: templates/speels/shape_board.html:21
+msgid "next"
+msgstr "nächste"
+
+#: templates/speels/shape_board.html:22
+msgid "previous"
+msgstr "letzter"
+
+#: templates/speels/shape_board.html:31
+msgid "Click the dots."
+msgstr "Klick die Punkten."
+
+#: templates/speels/shape_board.html:31
+msgid "Start with the red dot."
+msgstr "Anfang ist die rote Punkt."
+
+#: templates/speels/shape_board.html:35
+msgid "node"
+msgstr "Knoten"
+
+#: templates/speels/shape_board.html:36
+msgid "bend"
+msgstr "Krümmung"
+
+#: templates/speels/shape_board.html:37
+msgid "start"
+msgstr "Anfang"
+
+#: templates/speels/shape_list.html:15
+msgid "No shapes available."
+msgstr "Keine Formen da."

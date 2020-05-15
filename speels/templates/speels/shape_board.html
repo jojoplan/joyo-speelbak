@@ -1,0 +1,39 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block headlinks %}
+  {% load static %}
+    <script defer src="{% static 'common/jquery.js' %}"></script>
+    <script defer src="{% static 'speels/shape_handle.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+  <div class="hflex-box">
+      <h2>{% trans "Make this shape" %}:</h2><canvas id="board-canvas-small"></canvas>
+      
+      <div class="hflex-menu">
+        <ul class="sidebar-nav">
+          <li><a id="again">{% trans "again" %}</a></li>
+        </ul>
+      </div>
+      <div class="hflex-menu">
+        <ul class="sidebar-nav">
+          <li><a id="next-shape">{% trans "next" %}</a></li>
+          <li><a id="prev-shape">{% trans "previous" %}</a></li>
+        </ul>
+      </div>
+  </div>
+  <div>
+    <canvas id="board-canvas-2">
+    </canvas>
+  </div>
+  <div>
+    <p id="board-status">{% trans "Click the dots." %} {% trans "Start with the red dot." %}</p>
+  </div>
+  <div class="hidden">
+    <p id="shape-pins">{{ game.get_pins }}</p>
+    <p id="node">{% trans "node" %}</p>
+    <p id="bend">{% trans "bend" %}</p>
+    <p id="start">{% trans "start" %}</p>  </div>
+{% endblock %}
+
