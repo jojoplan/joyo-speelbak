@@ -111,16 +111,15 @@ function handleShapeBoard() {
     }
 
     /**
-     * Draw board and points  '#A1B5B4'
+     * Draw board.
      */
     function myclearBoard() {
-//       ctx.fillStyle = '#6F7580';
-      ctx.fillStyle = 'rgb(180, 180, 180)';
+      ctx.fillStyle = '#6F7580';
       ctx.fillRect(0, 0, 1204, 756);
     }
 
     /**
-     * Draw points
+     * Draw pins.
      * @param {array} points
      */
     function mydrawPins(points) {
@@ -228,7 +227,7 @@ function handleShapeBoard() {
         var sample = ctx.getImageData(mx, my, 1, 1).data;
         if (sample[0] === 180) {
             ctx.fillStyle = '#6C7378';        //'#A1B5B4';
-            mydrawPin({'x': mx, 'y':my}, scale * 1.2);
+            mydrawPin({'x': mx, 'y':my}, scale * 1.4);
             p.push({'x': mx, 'y':my});
             if (p.length >= pins.length - 1) {
                 p.push(p[0]);
