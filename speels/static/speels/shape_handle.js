@@ -45,7 +45,6 @@ function handleShapeBoard() {
         let pin = pin_sets[pin_sets.length - 1].split(',');
         set_count = parseInt(pin[2]);
     }
-    console.log(set_count)
 
     if ( set_count > current) {
         $( "#next-shape" ).attr("class", 'button-enabled');
@@ -218,8 +217,7 @@ function handleShapeBoard() {
         let offsetY = canvas[0].getBoundingClientRect().top;        
         let mx = parseInt(e.clientX - offsetX);
         let my = parseInt(e.clientY - offsetY);
-        console.log(mx, my);
-        
+         
         if (!gaining) {
             gaining = true;
         }
